@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Elastic Beanstalk",
-        "C9"
+        "C9",
+        "XRay"
     ]
 }
