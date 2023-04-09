@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Elastic Beanstalk",
         "C9",
-        "XRay"
+        "XRay",
+        "Route53"
     ]
 }

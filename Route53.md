@@ -110,3 +110,25 @@ Same as Random - MultiValueAnswer Polcy adds a health check for record set resor
 Can create up to 50 health checks for AWS endponts within or linked to same AWS account
 
 Basic health checks are 50c per health check per month
+
+
+### Route53 Resolver
+Formally known as .2 resolver
+Regional service that lets you route DNS queries between your VPCs and your network
+This is used to set up Hybrid networks
+Basic configuration: Imbound and Outbound - Inbound Onlyo or Outboudn Only
+
+
+## Final Review
+Route53 is a a DNS Provider, Register and manage domains, similiar to GoDaddy or NameCheap
+Simple Routing - Default Routing policy - multiple addresses in a random endpoint selection
+Weighted Routing - split up traffic based on different weights assigned (Percentages)
+Latency-Based Routing - Directs traffic based on region, for lowest possible latency for users
+Failover Routing - primaty site in one location , secondaty data recoryver site in atother (changes on health check)
+Geolocation TOuting - Oute trafi based on the geogrpahci location of a tequest origin
+Geo-Prozimity Rouing - route trafgic basedo nthe georgrpahic location using Bias Valeus (Needs ROute 52 Trfaffci Flow)
+Multi-Value ANswer Routing  Rrteutn mutliple values in respone to DNS queries (using Health checks)
+Traffic Flow - visual Editor  for chainging reouting policies, can version policy records fro easy reollboack
+AWS ALias Record - AWS smart DNS record, detects changes UPs for AWS resorces and adjusts automataiclly
+Route53 Resolver - Lets you regionally route DNS queries between your VPCs and you network Hybrid Environments
+Healtch checks can be cerated tom onitor and automatically over endpoints. You can have health chaecks monitro other health checks
