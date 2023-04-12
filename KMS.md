@@ -90,4 +90,3 @@ KMS supports two types of keys symmetric and asymmetric
   - aws kms decrypt
   - aws kms re-encrypt - for manuafllay rotating CMK (customer master key, change CMK that protects ciphertext or change encryption content of cycepher text)
   - aws kms enable-key-rotation -  turn on automatic key rotationg for symmetric keys and same user
-  -
