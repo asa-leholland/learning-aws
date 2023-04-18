@@ -63,4 +63,30 @@ Uses push synchtonaztion to push updates and synchronzie data
 Uses SNS under the hood
 
 
+### Settign up Cognito User Pools: Set App Integration - provicde a callbakc URL
 
+Can provide a callback URL, and Oauth scopes (phone, email, openid, aws.cognito.signin.user.admin, profile)
+
+Allowed Oauth flows: authorization code frant, impicait grant and cleiant credentials
+
+
+
+Can create a 10minutemail email account for testing
+https://10minutemail.com/
+
+
+
+### Cheat Sheet
+Cognito is a decensralized managed authentication suystem
+When you need to easily add authentication to mobile and desktop apps, think Cognito
+User PPools user adirectroy: allows user to authenticate using OAuth to Identiy Povider such as Facebook, Goolge aor Amazon to connect to web-appl;ications. Cognito User Pool is in itself an IpD
+User Pools use JWTs for perstisitng authenticaiotn
+
+Identity Pools proviee temporary AWS credentials to services lik S3, SynamoDB
+Cognito Sync can sync user data and preferences across devices with one line of code (powered by SNS)
+Web Identity Federation exhange idenity and securit informatrion between an Identif[yt Porivide] (IdxcP0 nad an applicatoin)
+
+Identity Provider (IdP) - a trsuted provider of your user identiy that lests you use auntihecation to access other servers, eg DFFfacebook, Twitter Google amaaonz
+
+OIDC is a type of idetntiy provider which uses OAuth
+SAML is a type of Identity Provider which is use d for signle sign on
