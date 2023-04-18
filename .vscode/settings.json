@@ -3,6 +3,7 @@
         "Elastic Beanstalk",
         "C9",
         "XRay",
-        "Route53"
+        "Route53",
+        "SNS"
     ]
 }
