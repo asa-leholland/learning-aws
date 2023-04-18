@@ -4,6 +4,7 @@
         "C9",
         "XRay",
         "Route53",
-        "SNS"
+        "SNS",
+        "Kinesis"
     ]
 }
