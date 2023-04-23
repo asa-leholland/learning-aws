@@ -5,6 +5,7 @@
         "XRay",
         "Route53",
         "SNS",
-        "Kinesis"
+        "Kinesis",
+        "EC2"
     ]
 }
