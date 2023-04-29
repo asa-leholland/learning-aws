@@ -41,3 +41,52 @@ You:
 
 THe Instance Profile holds a reference to a role. THe eEC2 instance is assocataie ith the Intnace Proifle. WHen you select and IAM reol when Launchig an EC2 instance, AWS will autoamtically create the instance Profiel for you. Instance Profile ars are not easily viewed via the AWS onsole.
 
+## Placement groupsPlaacement groups let you choose the logicl palcement of your einstances otto optimize for communication, performance or durabilityPlacehment groups are re.CluLCLt
+
+.-
+ packs instances close togherth inside an AZ
+ low-latecy network performance for ighly coupled ode - to nodde communnicnan
+ well suited for High Perfocamce Coumputing (HPC)
+ Clusters cannot be multi-AZ
+
+ Partition
+ - spreads instances across logical partitions
+ - each partiiton do not share the underlyig hardwate with each other (rack per partitio0
+ - well suited for large distriuted and replicated work lofads (Hadoop ,Cassandra, Kafka))
+
+Spread
+- Each instance is placed o na different rack
+- When critical instances should be kept separte from each other
+- You can spea a mza of 7 instances. Spreads can bem ulti-AZ
+
+You can prvode an EC2 with UserData which is a script that will acutomatically run when lanudnchig nan instance. You aould isntall package, apply update or anthing
+
+From within the EC2 instance, you can ssh in CURL this URL you can see the usr data script
+curl `192.254.169.254/latest/user-data`
+
+EC2 Metadata
+- additioal info you can receive about the EC2 instance at run time
+- From within EC2 - 169.254.169.254
+- latest/meta-data
+- public-ipv4 - the current public IPV4 address
+- ami-id  - the AMI ID used to launch this EC2 isntance
+- /isntance-type - the instance type of this EC2 instance
+- Combine metadata with () all sorts of advanced AWS eatures
+
+
+elastoc Compite Cloud (EC2) is a cloud computig nser vice
+Condifure your EC2 by choosing your OS, Storage, MEmory, Netwrok Throughput
+Launch and SSH into your srver within minutes
+EC2 comes win variet y of instance types specialized for different roles
+    Genral Purpose - balance of compute, memory and netwokrig reources
+    Compute Optimized - Ideal for conpute bound applications that benefit fro high performacen cprocessor
+    Memroy Optimized - Ideal for comptue bound applications that benegift from high performance processor
+    Mmory Optimized - fast performanc wfor workloads that process large dara sets in memory
+    Acceleatioed Optiized - hardware accelerators or co-processors
+    Storage Optimized - high, sequential read and writ a access to very large fdata sets on lcoal stoage
+
+Isnatnce Size generally double in price an key attibutes
+Plachement Gourps let you choose the logical palacehement of your intstance sto ipoptimize for communication perfoarmce or duavlt. Pkacehment groups are free
+UserData - a script that will autoamtically run when launghing an EC2 isntace
+MetaData - etaa data bout endpoint when you SSHd into teh EC2 inace - get the isntance tpyke currnet addes
+Instance Profiel - a container for an IAM rol that yo ucan use to pass roel nfromation ot and e
