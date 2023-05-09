@@ -6,6 +6,7 @@
         "Route53",
         "SNS",
         "Kinesis",
-        "EC2"
+        "EC2",
+        "ELB Elastic Load Balancer"
     ]
 }
